@@ -1,20 +1,28 @@
-#customBtn {
-  display: inline-block;
-  background: white;
-  color: #444;
-  width: 190px;
+.customBtn {
+  display: block;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
   border-radius: 5px;
-  border: thin solid #888;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #fed136;
+  /*word-wrap: break-word;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;*/
+  /*border: thin solid #888;*/
   box-shadow: 1px 1px 1px grey;
   white-space: nowrap;
 }
-#customBtn:hover {
+.customBtn:hover {
   cursor: pointer;
 }
 .google-signin{
-  background: url('./assets/img/btn_google_signin_light_normal_web.png') transparent 5px 50% no-repeat;
-  display: inline-block;
-  vertical-align: middle;
+  background: url('./assets/img/btn_google_signin_light_normal_web.png') transparent 0px 100% no-repeat fixed center;
+  /*display: inline-flex;;*/
+  /*vertical-align: middle;*/
   width: 191px;
   height: 42px;;
 }
@@ -23,19 +31,46 @@ span.label {
   font-weight: normal;
 }
 span.icon {
-  background: url('./assets/img/btn_google_light_normal_ios.svg') transparent 5px 50% no-repeat;
+  background: url('./assets/img/btn_google_light_normal_ios.svg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
   display: inline-block;
   vertical-align: middle;
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
+  border: 8px solid #fed136;
+  border-radius: 5px;
 }
-span.buttonText {
+span.iconF {
+  background: url('./assets/img/FB-f-Logo.png') ;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
   display: inline-block;
   vertical-align: middle;
-  padding-left: 42px;
-  padding-right: 42px;
-  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  border: 8px solid #fed136;
+  border-radius: 5px;
+}
+.buttonText {
+  font-size: .875rem;
   font-weight: bold;
+  color: white;
+  word-wrap: break-word;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
   /* Use the Roboto font that is loaded in the <head> */
   font-family: 'Roboto', sans-serif;
+}
+a.customBtn{
+  color : #ffffff;
+}
+a:hover, a:active, a:link, a:visited {
+   text-decoration:none;
+   color : #ffffff; /* for example */
 }
