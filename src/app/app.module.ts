@@ -14,6 +14,7 @@ import { AuthGuard } from './_guards/auth.guard';
 
 import { AlertService, AuthenticationService } from './_services/index';
 import { BusinessLoginComponent } from './business-login/business-login.component';
+import { BusinessMainComponent } from './business-main/business-main.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBPpVLhYx4eFMibvhtN9JVQ1rbXSMa-HyY",
@@ -28,7 +29,8 @@ const firebaseConfig = {
     AppComponent,
     LoginComponent,
     AlertComponent,
-    BusinessLoginComponent
+    BusinessLoginComponent,
+    BusinessMainComponent
   ],
   imports: [
     BrowserModule,

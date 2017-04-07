@@ -7,6 +7,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   background-color: #fed136;
+  position: relative;
   /*word-wrap: break-word;
   overflow: hidden;
   overflow-x: hidden;
@@ -70,7 +71,37 @@ span.iconF {
 a.customBtn{
   color : #ffffff;
 }
-a:hover, a:active, a:link, a:visited {
+a.customBtn:hover, a:active, a:link, a:visited {
    text-decoration:none;
    color : #ffffff; /* for example */
+}
+.or {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.or:before{
+  position: absolute;
+  display: inline-block;
+  content: '';
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-color: rgb(171, 157, 157);
+}
+
+.txt{
+  background-color:#fff;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0 0.8em;
+  margin: 0;
+  color: rgb(171, 157, 157);
 }
